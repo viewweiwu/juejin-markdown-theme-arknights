@@ -4,20 +4,6 @@ $bg-color: rgba(224, 224, 224, 0.1);
 $blue: #37b2ff;
 $yellow: #feea1e;
 
-@font-face {
-  font-family: "Bender";
-  src: url(https://web.hycdn.cn/arknights/official/static/Bender.c64517c5c0bfac6dc090.ttf);
-  src: url(https://web.hycdn.cn/arknights/official/static/Bender.313aaa21d4e17557c6cc.eot?#iefix) format("embedded-opentype"), url(https://web.hycdn.cn/arknights/official/static/Bender.908ce46993afbeb9cfad.woff) format("woff"), url(https://web.hycdn.cn/arknights/official/static/Bender.c64517c5c0bfac6dc090.ttf) format("truetype"), url(https://web.hycdn.cn/arknights/official/static/Bender.f394cc3467a381a86547.svg) format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SerifHeavy";
-  src: url(https://web.hycdn.cn/arknights/official/static/SourceHanSerifCN-Heavy.9432366e3ac333f92cd8.eot?#iefix) format("embedded-opentype"), url(https://web.hycdn.cn/arknights/official/static/SourceHanSerifCN-Heavy.ae45fa68e245d2f97d7b.woff) format("woff"), url(https://web.hycdn.cn/arknights/official/static/SourceHanSerifCN-Heavy.1612c7d097096d8d1482.ttf) format("truetype"), url(https://web.hycdn.cn/arknights/official/static/SourceHanSerifCN-Heavy.90eba8d86820e864d441.svg) format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .markdown-body {
   word-break: break-word;
   line-height: 1.75;
@@ -44,7 +30,7 @@ $yellow: #feea1e;
     margin-top: 35px;
     margin-bottom: 10px;
     font-weight: 900;
-    font-family: SerifHeavy, serif;
+    font-family: serif;
     letter-spacing: 1px;
     color: $blue;
 
@@ -188,7 +174,6 @@ $yellow: #feea1e;
       position: absolute;
       white-space: nowrap;
       transition: 300ms;
-      font-family: Bender;
       box-sizing: border-box;
       pointer-events: none;
       overflow: hidden;
@@ -197,7 +182,7 @@ $yellow: #feea1e;
     &:active {
       &::before {
         max-width: 120px;
-        padding-left: 24px;
+        padding-left: 14px;
       }
     }
   }
@@ -210,9 +195,11 @@ $yellow: #feea1e;
     overflow: auto;
     border-collapse:collapse;
 
-
     tr:hover {
-      border-bottom: 1px solid $yellow;
+      th,
+      td {
+        border-bottom: 1px solid $yellow;
+      }
     }
   }
   thead {
@@ -233,6 +220,7 @@ $yellow: #feea1e;
   }
   td {
     min-width: 120px;
+    border-bottom: 1px dashed #fff;
   }
 
   blockquote {
@@ -305,7 +293,6 @@ $yellow: #feea1e;
 
   ol li {
     padding-left: 6px;
-    font-family: Bender;
     list-style: decimal-leading-zero;
   }
 
