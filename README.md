@@ -1,6 +1,6 @@
 # arknights 掘金主题
 
-![](images/j4.png)
+![](images/j5.png)
 
 ## License
 
