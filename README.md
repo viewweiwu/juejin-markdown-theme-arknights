@@ -1,6 +1,8 @@
-# juejin 默认主题
+# arknights 掘金主题
 
-主题列表：https://github.com/xitu/juejin-markdown-themes
+![](images/j1.png)
+![](images/j2.png)
+![](images/j3.png)
 
 ## License
 

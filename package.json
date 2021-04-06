@@ -1,6 +1,7 @@
 {
-  "name": "juejin-markdown-theme-default",
+  "name": "juejin-markdown-theme-arknights",
   "private": true,
+  "author": "viewweiwu",
   "license": "MIT",
   "dependencies": {
     "bytemd": "^1.2.0"
